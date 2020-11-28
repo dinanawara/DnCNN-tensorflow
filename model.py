@@ -155,7 +155,7 @@ class denoiser(object):
         else:
             return False, 0
 
-    def test(self, eval_files, noisy_files, ckpt_dir, save_dir, temporal):
+    def test(self, eval_files, noisy_files, ckpt_dir, save_dir):
         """Test DnCNN"""
         # init variables
         tf.global_variables_initializer().run()
